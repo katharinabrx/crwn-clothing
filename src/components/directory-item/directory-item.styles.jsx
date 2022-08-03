@@ -7,6 +7,7 @@ export const BackgroundImage = styled.div`
   background-position: center;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
+
 export const Body = styled.div`
   height: 90px;
   padding: 0 25px;
@@ -30,6 +31,10 @@ export const Body = styled.div`
   p {
     font-weight: lighter;
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 15px;
   }
 `;
 
@@ -63,5 +68,9 @@ export const DirectoryItemContainer = styled.div`
 
   &:last-child {
     margin-left: 7.5px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
   }
 `;
